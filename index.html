@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator By Mahi</title>
+    <link rel="icon" type="image/png" href="img/calc.ico" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous"> 
+</head>
+<body>
+    <div class="container">
+        
+        <div class="calc-head">
+            <h1><Span style="color:#E02E36;">Calc</Span>Ulator</h1>
+            <input type="text" id="result">
+            <i class="fas fa-backspace backspace"></i>
+            <i class="fas fa-power-off power"></i>
+            <div class="btn-container">
+                <button class="calc-btn">SHIFT</button>
+                <button class="calc-btn">MODE</button>
+                <button class="calc-btn">M+</button>
+            </div>
+
+        </div>
+        <div class="calc-body">
+            <div class="row">
+                <input type="button" class="btn clear"  value="C" onclick="clearResult()" >
+                <input type="button" class="btn prosses" value="+/-">
+                <input type="button" class="btn prosses" value="%">
+                <input type="button" class="btn prosses col" value="/">
+            </div>
+
+            <div class="row">
+                <input type="button" class="btn num" value="7" onclick="insertNum(7)" >
+                <input type="button" class="btn num" value="8" onclick="insertNum(8)">
+                <input type="button" class="btn num" value="9" onclick="insertNum(9)">
+                <input type="button" class="btn prosses col" value="X">
+            </div>
+            <div class="row">
+                <input type="button" class="btn num" value="4" onclick="insertNum(4)">
+                <input type="button" class="btn num" value="5" onclick="insertNum(5)">
+                <input type="button" class="btn num" value="6" onclick="insertNum(6)">
+                <input type="button" class="btn prosses col" value="-">
+            </div>
+
+            <div class="row">
+                <input type="button" class="btn num" value="1" onclick="insertNum(1)">
+                <input type="button" class="btn num" value="2" onclick="insertNum(2)">
+                <input type="button" class="btn num" value="3" onclick="insertNum(3)">
+                <input type="button" class="btn prosses col" value="+">
+            </div>
+
+            <div class="row">
+                <input type="button" class="btn num" value="0" onclick="insertNum(0)">
+                <input type="button" class="btn num" value="." onclick="insertNum('.')">
+                <input type="button" class="btn del" value="DEL">
+                <input type="button" class="btn equal" value="=">
+            </div>
+        </div>
+        <div class="ending">
+            <span><i class="far fa-copyright"></i> Design By<a href="mailto:ishatnoormahi787@gmail.com"> MAHI</a> 2020.</span>
+        </div>
+    </div>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
